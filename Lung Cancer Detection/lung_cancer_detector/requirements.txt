@@ -1,0 +1,7 @@
+flask
+tensorflow
+pillow
+numpy
+kagglehub
+opencv-python
+

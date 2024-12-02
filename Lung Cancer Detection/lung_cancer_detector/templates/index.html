@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lung Cancer Detection</title>
+</head>
+<body>
+    <h1>Lung Cancer Detection System</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Upload Chest X-ray:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+        <img src="{{ file_path }}" alt="Uploaded Image" style="max-width: 300px;">
+    {% endif %}
+</body>
+</html>
+
